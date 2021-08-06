@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: DuckSoft/extract-7z-action@v1.0    
       - with:
-          args: |
+          run:
             pathSource ./7255-Documentation_Hub-html5_-Upload_to_GitHub.zip
-            pathTarget: ./
+            pathTarget ./
