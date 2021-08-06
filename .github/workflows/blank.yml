@@ -4,7 +4,7 @@ on: push
 
 jobs:
   file-extract:
-    runs-on:	windows-latest
+    runs-on:	linux-latest
     steps:
       - uses: TonyBogdanov/zip@1.0
         with:
