@@ -5,5 +5,6 @@ on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: main
-      pathSource: ./7255-Documentation_Hub-html5_-Upload_to_GitHub.zip
-      pathTarget: .
+    
+    pathSource: './7255-Documentation_Hub-html5_-Upload_to_GitHub.zip'
+    pathTarget: '.'
