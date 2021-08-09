@@ -7,9 +7,9 @@ def main():
     
     print('Unzipped files...')
     # Create a ZipFile Object and load sample.zip in it
-    with ZipFile('../../archive.zip', 'r') as zipObj:
+    with ZipFile('archive.zip', 'r') as zipObj:
        # Extract all the contents of zip file in current directory
-       zipObj.extractall('../../')
+       zipObj.extractall()
 
 
 if __name__ == '__main__':
