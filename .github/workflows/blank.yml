@@ -6,7 +6,8 @@ jobs:
   file-extract:
     runs-on:	ubuntu-latest
     steps:
-      - name: Unzip
-        uses: TonyBogdanov/zip@1.0
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
         with:
-          args: unzip -qq ./archive.zip -d ./
+          python-version: '3.7' 
+      - run: python work.py
