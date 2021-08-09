@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta charset="utf-8"></meta><meta http-equiv="X-UA-Compatible" content="IE=edge"></meta><meta name="viewport" content="width=device-width, initial-scale=1"></meta><title>Documentation Hub</title><link href="css/font-awesome.css" rel="stylesheet"></link><link href="css/roboto.font.css" rel="stylesheet"></link><link href="css/sm-core-css.css" rel="stylesheet" type="text/css"></link><link href="css/sm-simple.css" rel="stylesheet" type="text/css"></link><link href="css/theme2.css" rel="stylesheet"></link><link href="css/theme2-colors.css" rel="stylesheet"></link><link href="css/content-theme2.css" rel="stylesheet"></link><style></style><script src="js/jquery-3/jquery-3.4.1.min.js"></script><script src="js/jquery-migrate-3.0.1.min.js"></script><script src="js/materialize.min.js"></script><script src="js/bootstrap.min.js"></script><script src="js/jquery.smartmenus.js" type="text/javascript"></script><script src="js/html5-2-mp-common.js"></script><script src="js/html5-2.js"></script><script type="text/javascript">
+					//TODO: Used to modify path for portal search. Change to get dynamically
+					var portalLanguage = 'en';
+					var languageTitleMap = {"en":"Documentation Hub"};
+					
+					
+					var categoriesShown = 4;
+					var shown = 4;
+					
+					var versionsfile = '';
+
+
+					var indexDict = new Array();
+					var store = {};
+					var enterKey = 'select';
+					
+					
+						var fuse_threshold = 0.3;
+					</script><script src="js/fuse.min.js" type="text/javascript"></script><script src="js/html5.fuse.search.js" type="text/javascript"></script><script class="search-script" src="en/js/fuzzydata.js" type="text/javascript"></script><script src="js/jquery.mark.min.js" type="text/javascript"></script><script src="js/html5-2-portal.js"></script><link rel="icon" href="/favicon.ico" type="image/x-icon"></link><script type="text/javascript">
+				$(document).ready(function () {
+				$(".mediaobject img").addClass('materialboxed');
+				//Exclude images with links
+				$(".mediaobject a img").removeClass('materialboxed');
+				if (!document.documentMode) {
+				$('.materialboxed').materialbox();
+				}});
+			</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/googlecode.min.css"></link><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script><script type="text/javascript">
+			$(document).ready(function() {
+
+				$('pre:not(.embedcode)').each(function() {
+					/**
+					 * @type {string}
+					 */
+					var language = $(this).data('language');
+
+					if (language === 'plaintext' || language === 'text') {
+						$(this).addClass(language).addClass('hljs');
+						return true;
+					}
+					else {
+						var clone = this.cloneNode(true);
+						hljs.highlightBlock(clone);
+						$(this).empty().append($(clone).contents());
+						$(this).attr("class", $(clone).attr("class"));
+					}
+				});
+			});
+			</script><script src="js/layout-custom-script.js" type="text/javascript"></script></head><body><div class="portal-content theme2" dir="ltr"><header class="portal-header" data-portal-language="en"><div class="inner"><a class="logo-link"><img class="logo" src="css/image/portal-logo.svg" alt="Logo"></img></a><h1>How can we help you today?</h1><form class="portal-search form-inline" autocomplete="off"><input id="portal-search-field" type="search" class="form-control search-field" placeholder="Search"></input><button type="submit" class="btn"><i class="fa fa-search"></i></button></form></div></header><div class="portal-body" data-portal-language="en"><div class="portal-body-container"><div class="portal-body-row"><div class="portal-publications"><div class="inner"><div class="inner-row"><div class="portal-single-publication"><a href="en/"><div class="publication-icon"><i class="fa cat-panel cat-panel-1"></i></div><h3>Secure Web Gateway</h3></a></div><div class="portal-single-publication"><a href="en/"><div class="publication-icon"><i class="fa cat-panel cat-panel-2"></i></div><h3>Remote Browser Isolation</h3></a></div><div class="portal-single-publication"><a href="en/"><div class="publication-icon"><i class="fa cat-panel cat-panel-3"></i></div><h3>Email Isolation</h3></a></div><div class="portal-single-publication"><a href="en/7262-about-inline-casb.html"><div class="publication-icon"><i class="fa cat-panel cat-panel-4"></i></div><h3>Cloud Access Security Broker (CASB)</h3></a></div><div class="portal-single-publication"><a href="en/"><div class="publication-icon"><i class="fa cat-panel cat-panel-5"></i></div><h3>Data Lost Prevention (DLP)</h3></a></div><div class="portal-single-publication"><a href="en/"><div class="publication-icon"><i class="fa cat-panel cat-panel-6"></i></div><h3>Zero Trust Private Access (ZTPA)</h3></a></div><div class="portal-single-publication"><a href="en/"><div class="publication-icon"><i class="fa cat-panel cat-panel-7"></i></div><h3>Cloud Firewall</h3></a></div><div class="portal-single-publication"><a href="en/7304-web-isolation-release-notes.html"><div class="publication-icon"><i class="fa cat-panel cat-panel-8"></i></div><h3>Release Notes - All</h3></a></div></div></div><div class="show-all-categories"><a class="category-more-toc" href="#"><span class="toggle-label showmore">Show more...</span><span class="toggle-label showless">Show less...</span></a></div></div><h5 class="featured-content-label">Featured content</h5><div class="portal-contents featured-content"><div class="inner"><div class="publication-contents"><h4 class="featured-title"><span class="toc-count">1</span><a href="en/328-secure-web-gateway.html">Secure Web Gateway</a></h4><ul class="featured-subtopics"></ul></div><div class="publication-contents"><h4 class="featured-title"><span class="toc-count">1</span><a href="en/325-remote-browser-isolation.html">Remote Browser Isolation</a></h4><ul class="featured-subtopics"></ul></div><div class="publication-contents"><h4 class="featured-title"><span class="toc-count">1</span><a href="en/329-email-isolation.html">Email Isolation</a></h4><ul class="featured-subtopics"></ul></div><div class="publication-contents"><h4 class="featured-title"><span class="toc-count">7</span><a href="en/7256-cloud-access-security-broker--casb-.html">Cloud Access Security Broker (CASB)</a></h4><ul class="featured-subtopics"><li><a href="en/7262-about-inline-casb.html">About Inline CASB</a></li><li><a href="en/7265-casb-application-categories.html">CASB Application Categories</a></li><li><a href="en/7295-how-casb-works.html">How CASB works</a></li><li><a href="en/7297-how-to-enable-casb-for-your-account.html">How to enable CASB for your account</a></li><li><a href="en/7299-inline-casb-policy-reinforcement.html">Inline CASB policy reinforcement</a></li><li><a href="en/7301-get-started-with-inline-casb.html">Get started with Inline CASB</a></li></ul><a class="more-toc" href="#"><span class="toggle-label showmore">Show more...</span><span class="toggle-label showless">Show less...</span></a></div></div></div></div><div id="content-wrapper" class="portal-search-result"><div class="search-container"><h2>Search results</h2><ul class="searchresults"></ul><p class="noresults">No results found</p></div></div></div></div><footer class="portal-footer" data-portal-language="en"><div class="inner row"><div class="copyright col-md-3"> © 2021 Menlo Security </div><div class="dropup languages pull-right col-md-2"><button data-toggle="dropdown" class="dropdown-toggle btn btn-default">English <b class="caret"></b></button><ul class="dropdown-menu"><li><a class="language-item dropdown-item active" lang="en">English</a></li></ul></div></div></footer></div></body></html>
