@@ -13,7 +13,7 @@ def moveAllFilesinDir(srcDir, dstDir):
     else:
         print("srcDir & dstDir should be Directories")
 
-sourceDir = '/7255-Documentation_Hub-html5/out'
-destDir =  '/'
+sourceDir = './7255-Documentation_Hub-html5/out'
+destDir =  '.'
 
 moveAllFilesinDir(sourceDir,destDir)
